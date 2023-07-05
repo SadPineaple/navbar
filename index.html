@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="ICON.svg" type="image/svg">
+    <title>Barra de Navegação</title>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Time</a></li>
+        <li><a href="#">Contato</a></li>
+        <span class="toggleMenu"></span>
+    </ul>
+    <script>
+        let toggleMenu = document.querySelector('.toggleMenu');
+        let navigation = document.querySelector('.navigation')
+        toggleMenu.onclick = function(){
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
